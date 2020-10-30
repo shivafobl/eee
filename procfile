@@ -1,1 +1,1 @@
-web: gunicorn  College.wsgi
+web: gunicorn  usermanagement.wsgi
