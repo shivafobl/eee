@@ -23,6 +23,9 @@ img {
 
 p {
   font-family: cursive;
+  font-color:black;
+  font-size: 20px;
+
 }
 
  h1{
@@ -33,11 +36,12 @@ p {
 
 }
 </style>
-<img src='{{post.img.url}}' class="center" >
-<h1 style="color:red" >{{post.title}}</h1>
-<i>{{post.created_at}}</i>
+ <h1 style="color:red" >{{post.title}}</h1><br>
+<img src='{{post.img.url}}' class="center" ><br>
+<p >{{post.description}}</p><br>
+<h5 style="color:yellow;"><a href="{{post.pdf.url}}" download>Preview & Download the pdf here<h5><br>
+<i style="color: red;">{{post.created_at}}</i><br>
 <b style="color:blue" >{{post.author}}</b>
-<p>{{post.description}}</p>
 {% endfor %}
 
 

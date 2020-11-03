@@ -9,6 +9,7 @@ class Post(models.Model):
     title=models.CharField(max_length=120)
     description=models.TextField()
     img = models.ImageField(upload_to='photos/')
+    pdf=models.FileField(upload_to='static/media',default=False)
     author=models.CharField(max_length=50)
     created_at=models.DateField(default=datetime.now,blank=True)
     is_published=models.BooleanField(default=False)
